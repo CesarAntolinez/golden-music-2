@@ -6,26 +6,16 @@
 // Height
 .gold-h-min-content { height: min-content }
 .gold-h-6px { height: 6px }
-// Margins
-.golden__mt-body { margin-top: 110px }
-.golden__mt-125 { margin-top: 125px } 
-// texts
-.golden__l-height-2 { line-height: 2; }
-.repeating-linear {
-    background-color: #0083D6;
-    background: repeating-linear-gradient(
-      -45deg,
-      #c9c8c8,
-      #c9c8c8 3px,
-      white 6px,
-      white 16px
-    );
-}
 // lists
 .listyle-none { list-style: none }
+// Margins
+.gold-mt-body { margin-top: 110px }
+.golden__mt-125 { margin-top: 125px } 
 // Positions
 .gold-top-0 { top: 0 }
 .gold-right-0 { right: 0 }
+// texts
+.golden__l-height-2 { line-height: 2; }
 // Z-Index
 .gold-zindex-205 { z-index: 205 }
 
@@ -186,6 +176,17 @@
 // Boxes
 .golden__box-video-left { width: 100% }
 
+// .repeating-linear {
+//     background-color: #0083D6;
+//     background: repeating-linear-gradient(
+//       -45deg,
+//       #c9c8c8,
+//       #c9c8c8 3px,
+//       white 6px,
+//       white 16px
+//     );
+// }
+
 @media(min-width: 375px) {
     // Paddings
     .golden__py-artists {
@@ -200,8 +201,8 @@
 }
 
 @media(min-width: 576px) {
-    // Margin
-    .golden__mt-body { margin-top: 87px }
+    // Margins
+    .gold-mt-body { margin-top: 87px }
 
 
 

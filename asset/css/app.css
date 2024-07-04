@@ -513,27 +513,23 @@
 .gold-h-6px {
   height: 6px; }
 
-.golden__mt-body {
+.listyle-none {
+  list-style: none; }
+
+.gold-mt-body {
   margin-top: 110px; }
 
 .golden__mt-125 {
   margin-top: 125px; }
-
-.golden__l-height-2 {
-  line-height: 2; }
-
-.repeating-linear {
-  background-color: #0083D6;
-  background: repeating-linear-gradient(-45deg, #c9c8c8, #c9c8c8 3px, white 6px, white 16px); }
-
-.listyle-none {
-  list-style: none; }
 
 .gold-top-0 {
   top: 0; }
 
 .gold-right-0 {
   right: 0; }
+
+.golden__l-height-2 {
+  line-height: 2; }
 
 .gold-zindex-205 {
   z-index: 205; }
@@ -733,7 +729,7 @@
   .golden__squared-1-float {
     width: 75%; } }
 @media (min-width: 576px) {
-  .golden__mt-body {
+  .gold-mt-body {
     margin-top: 87px; }
 
   .golden__h-sm-100 {
@@ -1109,6 +1105,9 @@ body {
 a {
   text-decoration: none !important;
   cursor: pointer; }
+
+.ff-roboto {
+  font-family: "Roboto" !important; }
 
 .font__charmonman {
   font-family: "Charmonman"; }
