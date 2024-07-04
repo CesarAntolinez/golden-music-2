@@ -1,0 +1,241 @@
+// Object Fit
+.img__fit-cover { object-fit: cover }
+.img__fit-contain { object-fit: contain }
+.img__card-flex { height: 400px }
+// Object Position
+.img__position-center {  object-position: center !important }
+// Image background posisioned
+.img__bg-posisioned {
+	position:absolute;
+	object-position:top;
+	z-index:-1;
+	width: 100%;
+	height:-webkit-fill-available;
+	object-fit: cover;
+}
+// EXTENDS CLASS
+.img__bg-zoom-hover { // Extend Class - Card Zoom Curtain Us - Home
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 250px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+// ***** Card Zoom Curtain Us - Home *****
+.img__logo-golden  {
+	position: absolute;
+	padding: 16px;
+	opacity: 0;
+	img {
+		width: 100%; 
+		background-color: #3d42126b; 
+		border-radius: 8px;
+	}
+}
+.img__curtain-zoom {
+	visibility: hidden;
+	@extend .img__bg-zoom-hover;
+}
+.img__bg-zoom {
+	top: 0;
+	position: absolute;
+	transition: 0.2s all ease-out;
+	@extend .img__bg-zoom-hover;
+}
+// ***** End Card Zoom Curtain Us - Home *****
+
+// ***** Images Banner top - Home *****
+.img__banner-top-swiper {
+	width: 100%;
+	height: 320px;
+	object-fit: cover;
+	object-position: center;
+}
+// ***** End Images Banner top - Home *****
+.img__rounded-circle-90 {
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid gold;
+    object-fit: cover;
+}
+
+// ***** Images - Comments *****
+@mixin imgContainer($width, $height, $bg-color: #FFFFFF, $radius: 4px) {
+    width: $width;
+    height: $height;
+    background-color: $bg-color;
+    @if $radius != 4 {
+        border-radius: $radius;
+    }
+}
+@mixin imgObject($type: contain, $position: center){
+    width: 100%;
+    height: 100%;
+    object-fit: $type;
+    object-position: $position;
+    border-radius: inherit;       
+}
+
+.img__rounded-small {
+    @include imgContainer(60px, 60px, #FFFFFF, 50% );
+    img {
+        @include imgObject(cover);
+    }
+}
+// ***** End Images - Comments *****
+
+.img__max-w-500 { max-width: 100%; }
+
+// Backgrounds images
+//********** US View **********//
+.img__nosotros {
+	background-image: url('../image-temp/about-us/contacts/img-contact-c002.webp');
+	border-radius: 0 !important; 
+	height: 500px !important;
+	@extend .img-rounded-right-bottom; 
+}
+.img__mision {
+	background-image: url('../image-temp/about-us/contacts/img-contact-c003.jpg');
+	@extend .img-rounded-right-bottom;
+}
+.img__vision {
+	background-image: url('../image-temp/about-us/contacts/img-contact-c004.jpg');
+	@extend .img-rounded-right-bottom;
+}
+
+@media (min-width: 576px) {
+    .h-img { 
+        width: 100%;
+        height: 150%;
+        object-fit: cover;
+    }
+}
+
+@media(min-width: 600px) {
+	// ***** Images Banner top - Home *****
+	.img__banner-top-swiper { height: 400px }
+}
+
+@media(min-width: 768px) {
+	// ***** Images Banner top - Home *****
+	.img__banner-top-swiper { height: 500px }
+}
+
+@media(min-width: 992px) {
+	// ***** Images Banner top - Home *****
+	.img__banner-top-swiper { height: 600px }
+}
+
+@media(min-width: 1200px) {
+	// ***** Images Banner top - Home *****
+	.img__banner-top-swiper { height: 800px }
+	.img__max-w-500 { max-width: 500px; }
+	.img__h-flex-400 { height: calc(100% - 400px) }
+}
+
+@media(min-width: 1400px) {
+	// ***** Images Banner top - Home *****
+	.img__banner-top-swiper { height: 900px }
+}
+
+@media(min-width: 1750px) {
+	// ***** Images Banner top - Home *****
+	.img__banner-top-swiper { height: 1024px }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.img-fluid-cover {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+// Extends class 
+.img-bg-fixed { // extends class
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center; 
+	background-attachment: fixed;
+}
+
+.img-rounded-right-bottom { // extends class
+	width: 100%;
+	height: 400px; 
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 0 0 350px 0;
+}
+
+
+
+
+// Services - Home
+.img-bg-swiper-service {
+	background-image: url('../image-temp/home/banners/bg-banner-play-sax04.jpg');
+	background-size: cover;
+	background-position-y: initial;
+	background-repeat: no-repeat;
+	height: 400px;
+}
+.img-card-service {
+	width: 150px;
+	height: 150px;
+	margin: 0 auto 10px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 4px solid #fff;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+// Artists - Home
+.img-bg-artists {
+	background-image: url('../image-temp/home/banners/banner-artist-01.jpg');
+	@extend .img-bg-fixed;
+}
+
+
+
+//********** Service View **********//
+.img-size-service {
+	width: 100%; 
+	height: 350px;
+	object-fit: cover;
+}
+
+//********** Artists View **********//
+
+
+.img-exp-violin {
+	width: 200px; 
+	height: 200px; 
+	transform: translate(-50%, -20%); 
+	top: -20%; 
+	left: 50%; 
+	z-index: 1;
+}

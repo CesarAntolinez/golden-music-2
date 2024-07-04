@@ -1,0 +1,97 @@
+// Gradientes
+.bg-grad-gold-1 { 
+    background: linear-gradient(145deg, 
+    rgba(71, 56, 35, 0.5) 20%, 
+    #EBD1AE 43%, rgba(119, 88, 44, 0.1) 50%, 
+    rgba(206, 148, 67, 0.6) 66%, 
+    #EBD1AE 80%, 
+    #EBB467 85%) 
+}
+.bg-grad-gold-2 { 
+    background-image: radial-gradient(circle at 49.22% 50.45%, 
+    #ffea82 0, 
+    #eed077 25%, 
+    #d8b46c 50%, 
+    #c09a62 75%, 
+    #a98359 100%) 
+}
+.bg-grad-gold-3 { 
+    background: linear-gradient(145deg, 
+    rgba(71, 56, 35, 10) 0%,
+    rgba(119, 88, 44, 1) 36%, 
+    rgba(206, 148, 67, 1.5) 77%, 
+    #f78f08 100%);
+}
+.bg-grad-gold-4 { 
+    background: linear-gradient(145deg, 
+    rgba(71, 56, 35, 0.5) 20%, 
+    rgba(119, 88, 44, 0.1) 52%, 
+    rgba(206, 148, 67, 0.6) 65%, 
+    #f78f08 100%);
+}
+// Background Image Gradient
+.bg-img-grad-gold-1 { // PENDIENTE POR CAMBIAR POR EL bg-grad-gold-2 LINEA 10
+    background-image: radial-gradient(circle at 49.22% 50.45%, 
+    #ffea82 0, 
+    #eed077 25%, 
+    #d8b46c 50%, 
+    #c09a62 75%, 
+    #a98359 100%) 
+}
+.bg-img-grad-gold-2 {
+    background-image: linear-gradient(to left, 
+    #EBB467, 
+    #EBD1AE, 
+    #AE9B81);
+}
+
+.theme__gold-neon {
+    color: #f7dab2;
+	text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #AE9B81,
+    0 0 42px #AE9B81,
+    0 0 82px #9E7A46,
+    0 0 92px #9E7A46,
+    0 0 102px #666204,
+    0 0 151px #666204;
+}
+
+
+
+
+
+
+
+
+
+.theme__gradiente-color-1 { background: linear-gradient(#03a9f4, #e91ee3); }
+
+.theme__gradiente-gold-1-145deg { background: linear-gradient(145deg, rgba(71, 56, 35, 0.9) 20%, rgba(119, 88, 44, 0.66) 50%, rgba(206, 148, 67, 0.66) 70%, rgba(247, 143, 8, 0.66) 90%) }
+.theme__gradiente-gold-2-145deg { background: linear-gradient(145deg, rgba(71, 56, 35, 0.5) 20%, rgba(119, 88, 44, 0.1) 52%, rgba(206, 148, 67, 0.6) 65%, rgba(247, 143, 8, 1) 100%) }
+.theme__gradiente-gold-3-145deg { background: linear-gradient(145deg, rgba(71, 56, 35, 0.5) 20%, #EBD1AE 43%, rgba(119, 88, 44, 0.1) 50%, rgba(206, 148, 67, 0.6) 66%, #EBD1AE 80%, #EBB467 85%) }
+.theme__gradiente-gold-2-45deg { background: linear-gradient(45deg, rgba(71, 56, 35, 0.9) 20%, rgba(119, 88, 44, 0.66) 50%, rgba(206, 148, 67, 0.66) 70%, rgba(250, 203, 143, 0.66) 90%) }
+.theme__gradiente-gold-3-45deg { background-image: linear-gradient(45deg, #22221cc2, #72480fd1) }
+
+.theme__gradiente-gold-1-90deg { background-image: linear-gradient(90deg, #fcf595, #EBB467) }
+.theme__gradiente-gold-2-90deg { background-image: linear-gradient(90deg, #fcf595, #9E7A46) }
+.theme__gradiente-gold-1-left { background-image: linear-gradient(to left, #EBB467, #EBD1AE) }
+
+.theme__radial-gradiente-gold-1 { background-image: radial-gradient(circle at 49.22% 50.45%, #ffea82 0, #eed077 25%, #d8b46c 50%, #c09a62 75%, #a98359 100%) }
+.theme__radial-gradiente-gold-2 { background-image: radial-gradient(circle at 26.88% 73.12%, #2c2c2c 0, #525257 50%, #2c2c2c 100%); }
+
+
+// Filters
+.theme__filter-gray5 { filter: grayscale(.5) }
+.theme__filter-opacity8 { filter: opacity(0.8) }
+.theme__filter-opacity9 { filter: opacity(0.9) }
+
+// Font color
+.theme__color-gradient {
+    -webkit-background-clip: text;
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+

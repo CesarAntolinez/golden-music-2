@@ -1,0 +1,67 @@
+// Swipper Banner main home
+.mySwiperBanner > .swiper-button-next { right: 65px }
+.mySwiperBanner > .swiper-button-prev { left: 65px }
+.mySwiperBanner > .swiper-button-prev,
+.mySwiperBanner > .swiper-button-next {
+	@include squared(63px, 63px);
+	@extend .bg-grad-gold-4; 
+    border-radius: 50%;
+    text-align: center;
+    line-height: 4;
+}
+.swiper-button-next:after, 
+.swiper-button-prev:after  { @extend .theme__gold-neon; }
+// END Swipper Banner main home
+
+// Swipper Services home
+.swiper-services > .swiper-button-prev,
+.swiper-services > .swiper-button-next {
+	@include squared(63px, 63px);
+	@extend .bg-grad-gold-3; 
+    box-shadow: 0px 0px 8px 6px black;
+	border-radius: 50%;
+    text-align: center;
+    line-height: 4;
+}
+.swiper-services .swiper-pagination {
+	position: absolute; 
+	bottom: 16px;
+}
+.swiper-services .swiper-pagination-bullet {
+	@extend .bg-img-grad-gold-2;
+	opacity: 1;
+	border: 1px solid var(--gold-thin);
+}
+.swiper-services .swiper-pagination-bullet-active {
+	width: 65px !important;
+    height: 16px !important;
+    border-radius: 16px;
+	@extend .bg-img-grad-gold-2;
+}
+.swiper-services .swiper-pagination-bullet { @include squared(20px, 20px) }
+.swiper-services .swiper-pagination-horizontal { width: 250px!important }
+.swiper-services .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, 
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet 
+{ transition: .8s transform,.2s left }
+// END Swipper Services home
+
+// Swipper Artists home
+.swiper-artists .swiper-btn {
+	color: var(--gold-thin);
+	transition: color .3s ease;
+	&:hover { color: var(--gold-matt); }
+}
+.swiper-artists .swiper-pagination {
+	position: absolute; 
+	bottom: 8px;
+}
+.swiper-artists .swiper-pagination-bullet {
+	@include squared(24px, 24px);
+	background-color: var(--gold-thin);
+	opacity: 1;
+}
+.swiper-artists .swiper-pagination-bullet-active {
+	@include squared(26px, 26px);
+	background-color: var(--gold-dark);
+}
+// END Swipper Artists *****
