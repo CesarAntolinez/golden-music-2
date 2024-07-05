@@ -355,5 +355,59 @@
         <!-- Files.js -->
         <script src="resources/js/slider.js"></script>
         <script src="resources/js/function.js"></script>
+        <!-- Jquery 2.1 btn-ver más -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        
+        <!-- Skills progress circle dynamic -->
+        <script>
+            const progText = document.querySelectorAll('.skills__golden-text');
+            const progress = document.querySelectorAll('.golden__rounded-progress-effect');
+            const progContainer = document.querySelector('.skills__golden'); 
+            let bole = false;
+            window.addEventListener("scroll", function (){
+                if (pageYOffset > progContainer.offsetTop - (600) && bole === false) {
+                    for(let i = 0; i < progText.length; i++) {
+                        progText[i].innerText = 0;
+                        count = 0;
+                        progress[i].style.bottom = "100%";
+                        progress[i].style.bottom = progText[i].dataset.count - 100 + "%";
+
+                        function updateCount() {
+                            target = parseInt(progText[i].dataset.count);
+
+                            if (count < target) {
+                                count++;
+                                progText[i].innerText = count;
+                                setTimeout(updateCount, 50)
+                            } else  {
+                                progText[i].innerText = target + "%";
+                            }
+                        }
+                        updateCount();
+                        bole = true;
+                    }
+                }
+            });
+        </script>
+
+        <script>
+            $('.btn-item').click(function (item) {
+                let tab = $(item.currentTarget)
+
+                $('.container-sub-menu').hide();
+                $(tab.data('parent')).show();
+            });
+
+
+            $(document).on("click",function(e) {
+
+                var container = $(".btn-item");
+
+                    if (!container.is(e.target) && container.has(e.target).length === 0) { 
+                    //Se ha pulsado en cualquier lado fuera de los elementos contenidos en la variable container
+                    $('.container-sub-menu').hide();
+                    }
+            });
+        </script>
     </body>
 </html>

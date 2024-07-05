@@ -329,52 +329,66 @@
         
         <!-- Bootstrap 5.2 cdn -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Swiper cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <!-- AOS Animation -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- Files.js -->
+        <script src="resources/js/slider.js"></script>
+        <script src="resources/js/function.js"></script>
         <!-- Jquery 2.1 btn-ver más -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-          
-                <!-- AOS Animation -->
-                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                <!-- Files.js -->
-                <script src="resources/js/function.js"></script>
+        
+        <!-- Skills progress circle dynamic -->
+        <script>
+            const progText = document.querySelectorAll('.skills__golden-text');
+            const progress = document.querySelectorAll('.golden__rounded-progress-effect');
+            const progContainer = document.querySelector('.skills__golden'); 
+            let bole = false;
+            window.addEventListener("scroll", function (){
+                if (pageYOffset > progContainer.offsetTop - (600) && bole === false) {
+                    for(let i = 0; i < progText.length; i++) {
+                        progText[i].innerText = 0;
+                        count = 0;
+                        progress[i].style.bottom = "100%";
+                        progress[i].style.bottom = progText[i].dataset.count - 100 + "%";
+
+                        function updateCount() {
+                            target = parseInt(progText[i].dataset.count);
+
+                            if (count < target) {
+                                count++;
+                                progText[i].innerText = count;
+                                setTimeout(updateCount, 50)
+                            } else  {
+                                progText[i].innerText = target + "%";
+                            }
+                        }
+                        updateCount();
+                        bole = true;
+                    }
+                }
+            });
+        </script>
 
         <script>
-            $(document).ready(function() {
-  // 250 characters are shown by default
-    var showChar = 250;  
-   var dots = "... ";
-    var moreText = "Ver+";
-    var lessText = "Ver-";
-    
+            $('.btn-item').click(function (item) {
+                let tab = $(item.currentTarget)
 
-    $('.show-text').each(function() {
-        var content = $(this).html();
- 
-        if(content.length > showChar) {
+                $('.container-sub-menu').hide();
+                $(tab.data('parent')).show();
+            });
 
-            var cont = content.substr(0, showChar);
-            var restOfTheText = content.substr(showChar, content.length - showChar);
- 
-            var html = cont + '<span class="dots">' + dots + '</span><span class="morecontent"><span>' + restOfTheText + '</span><a href="" class="morelink">' + moreText + '</a></span>';
-          
- 
-            $(this).html(html);
-        }
- 
-    });
- 
-    $(".morelink").click(function(){
-        if($(this).hasClass("test")) {
-            $(this).removeClass("test");
-            $(this).html(moreText);
-        } else {
-            $(this).addClass("test");
-            $(this).html(lessText);
-        }
-        $(this).parent().prev().toggle();
-        $(this).prev().toggle();
-        return false;
-    });
-});
+
+            $(document).on("click",function(e) {
+
+                var container = $(".btn-item");
+
+                    if (!container.is(e.target) && container.has(e.target).length === 0) { 
+                    //Se ha pulsado en cualquier lado fuera de los elementos contenidos en la variable container
+                    $('.container-sub-menu').hide();
+                    }
+            });
         </script>
     </body>
 </html>
