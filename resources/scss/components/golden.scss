@@ -186,6 +186,7 @@
 //       white 16px
 //     );
 // }
+.height-video { height: 325px; width: 100%}
 
 @media(min-width: 375px) {
     // Paddings
@@ -198,6 +199,10 @@
     .golden__mt-less-160 { margin-top: -160px }
     // Squared Shape
     .golden__squared-1-float {  width: 75% }
+}
+
+@media(min-width: 500px) {
+    .height-video { height: 325px; width: 480px}
 }
 
 @media(min-width: 576px) {

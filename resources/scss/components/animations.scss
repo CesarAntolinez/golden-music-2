@@ -93,8 +93,16 @@
 }
 // ***** End Animation Curtain (Services) *****
 
-// ***** Animation bottom scroll top *****
-.animation__btn-scroll-effect {
+// Animation Btn Scroll Up
+.animation-btn-scroll-up {
+	width: 50px;
+    height: 50px;
+	position: fixed;
+    bottom: 60px;
+    right: 28px;
+	z-index: 1;
+}
+.animation-effect-scroll-up {
 	width: 0rem;
 	height: 0rem;
 	background: linear-gradient(145deg, rgba(71, 56, 35, 0.5) 20%, rgba(119, 88, 44, 0.1) 52%, rgba(206, 148, 67, 0.6) 65%, #f78f08 100%);
@@ -107,16 +115,20 @@
 	transition: .2s;
 	z-index: -1;
 }
-.animation__btn-scroll-effect i {
+.animation-effect-scroll-up i {
 	position: absolute;
 	top: 48%;
 	left: 50%;
 	transform: translate(50%, 50%) scale(0);
 	transition: .2s;
-	@extend .theme__gold-neon;
+	@extend .bg-efect-neon;
 }
-.animation__btn-scroll-top { z-index: 10; background-color: black; border-radius: 50%; }
-.animation__btn-scroll-top .animation__btn-scroll-effect {
+.animation-action-scroll-up { 
+	z-index: 10; 
+	background-color: black; 
+	border-radius: 50%; 
+}
+.animation-action-scroll-up .animation-effect-scroll-up {
 	position: absolute;
 	animation: popup .3s ease-in-out;
 	width:40px;
@@ -124,22 +136,42 @@
 	z-index: 11;
 	border: 2px solid #EBB467;
 }
-.animation__btn-scroll-top i { transform: translate(-50%, -50%) scale(1); }
+.animation-action-scroll-up i { transform: translate(-50%, -50%) scale(1); }
 @keyframes popup {
 	0%{
 		width: 0;
 		height: 0;
 	}
 	50%{
-		width: 20px;
-		height: 20px;
+		width: 25px;
+		height: 25px;
 	}
 	100%{
-		width: 40px;
-		height: 40px;
+		width: 50px;
+		height: 50px;
 	}
 }
-// ***** End Animation bottom scroll top *****
+// End Animation Btn Scroll Up
+// Animation - Btn Whatsapp
+.animation-btn-wp-float {
+	width:45px;
+	height:45px;
+	display: block;
+	padding: 2px 0 0 2px;
+	border-radius:50%;
+	background-color: var(--green);
+	box-shadow: 2px 1px 3px 2px var(--black);
+	position:fixed;
+	right:28px;
+	bottom:10px;
+	z-index: 100;
+	cursor: pointer;
+}
+// End Animation - Btn Whatsapp
+
+
+
+
 .animation__bg-restorant { // Restaurant Music interactive background
     animation: slide 3s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, #44433f4f 50%, #ffffff 50%);

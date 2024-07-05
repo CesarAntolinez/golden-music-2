@@ -4,41 +4,40 @@
 	z-index: 1000;
 	top: 0;
 	left: 0;
-	background-color: #0a0a0a;
+	background-color: var(--black);
 }
 #menu {
 	gap: 36px;
 	margin-bottom: 0;
 	list-style: none;
-	li a { color: #EBB467;
+	li a { color: var(--gold-thin);
 		span::after {
 			content: "";
+			@include squared(10px, 10px);
 			border-right: 2px solid;
 			border-bottom: 2px solid;
-			width: 10px;
-			height: 10px;
 			transform: translate(-50%, -50%);
 			rotate: 45deg;
 			position: absolute;
 			top: 50%;
 			right: -16px;
 		}
-		&:hover { color: #EBD1AE }
+		&:hover { color: var(--gold-soft) }
 	}
 	#item-service ul, #item-artist ul {
 		width: max-content;
 		position: absolute;
-		background-color: #0a0a0a;
-		border: 1px solid #EBB467;
+		background-color: var(--black);
+		border: 1px solid var(--gold-thin);
 		padding: 16px 0;
 		list-style: none;
 		li a {   
 			display: block;
 			padding: 8px 24px;
-			color: #EBB467; 
+			color: var(--gold-thin); 
 			&:hover {
-				background-color: #6B522F; 
-				color: #EBD1AE;
+				background-color: var(--gold-hard); 
+				color: var(--gold-soft);
 				text-decoration: none !important; 
 			}
 		}
@@ -68,7 +67,7 @@
 }
 .nav-mobile-btn {
 	@include squared(50px, 50px);
-	@extend .rounded-circle;
+	border-radius: 50%;
     position: absolute;
     text-align: center;
     z-index: 300;
@@ -83,12 +82,12 @@
 	left: 0;
 	transition: all 200ms;
 	display: inline-block;
-	background-color: #9E7A46;
+	background-color: var(--gold-dark);
 } 
 .nav-mobile-btn-icon {
 	@include squared(30px, 4px);
 	display: inline-block;
-	background-color: #9E7A46;
+	background-color: var(--gold-dark);
 	position: relative;
 	&:before {
 		@include squared(30px, 4px);
@@ -103,7 +102,7 @@
 }
 .nav-mobile-bg {
 	@include squared(50px, 50px);
-	@extend .rounded-circle;
+	border-radius: 50%;
 	background-size: cover;
 	background-position: center;
 	z-index: 100;
@@ -113,15 +112,17 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+	width: 0;
 	height: 100vh;
 	opacity: 0;
-	width: 0;
 	visibility: hidden;
 	z-index: 200;
 	transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .glass {
-	background: linear-gradient(325deg, rgba(175, 175, 135, 0.5) 25%, rgba(125, 125, 125, 0.1) 75%);
+	background: linear-gradient(325deg,
+		rgba(175, 175, 135, 0.5) 25%, 
+		rgba(125, 125, 125, 0.1) 75%);
 	box-shadow: 0px 3px 18px -1px rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(16px);
 	-webkit-backdrop-filter: blur(16px);
@@ -135,8 +136,7 @@
 	right: 0;
 	bottom: 0;
 	pointer-events: none;
-	background: linear-gradient(
-		125deg,
+	background: linear-gradient(125deg,
 		rgba(255, 255, 255, 0.9) 15%,
 		rgba(213, 252, 245, 0.8) 38%,
 		rgba(168, 248, 205, 0.6) 55%,

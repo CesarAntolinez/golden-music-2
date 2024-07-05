@@ -106,7 +106,15 @@
   100% {
     left: 0;
     height: 100%; } }
-.animation__btn-scroll-effect {
+.animation-btn-scroll-up {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 60px;
+  right: 28px;
+  z-index: 1; }
+
+.animation-effect-scroll-up {
   width: 0rem;
   height: 0rem;
   background: linear-gradient(145deg, rgba(71, 56, 35, 0.5) 20%, rgba(119, 88, 44, 0.1) 52%, rgba(206, 148, 67, 0.6) 65%, #f78f08 100%);
@@ -119,19 +127,19 @@
   transition: .2s;
   z-index: -1; }
 
-.animation__btn-scroll-effect i {
+.animation-effect-scroll-up i {
   position: absolute;
   top: 48%;
   left: 50%;
   transform: translate(50%, 50%) scale(0);
   transition: .2s; }
 
-.animation__btn-scroll-top {
+.animation-action-scroll-up {
   z-index: 10;
   background-color: black;
   border-radius: 50%; }
 
-.animation__btn-scroll-top .animation__btn-scroll-effect {
+.animation-action-scroll-up .animation-effect-scroll-up {
   position: absolute;
   animation: popup .3s ease-in-out;
   width: 40px;
@@ -139,7 +147,7 @@
   z-index: 11;
   border: 2px solid #EBB467; }
 
-.animation__btn-scroll-top i {
+.animation-action-scroll-up i {
   transform: translate(-50%, -50%) scale(1); }
 
 @keyframes popup {
@@ -147,11 +155,25 @@
     width: 0;
     height: 0; }
   50% {
-    width: 20px;
-    height: 20px; }
+    width: 25px;
+    height: 25px; }
   100% {
-    width: 40px;
-    height: 40px; } }
+    width: 50px;
+    height: 50px; } }
+.animation-btn-wp-float {
+  width: 45px;
+  height: 45px;
+  display: block;
+  padding: 2px 0 0 2px;
+  border-radius: 50%;
+  background-color: var(--green);
+  box-shadow: 2px 1px 3px 2px var(--black);
+  position: fixed;
+  right: 28px;
+  bottom: 10px;
+  z-index: 100;
+  cursor: pointer; }
+
 .animation__bg-restorant {
   animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #44433f4f 50%, #ffffff 50%);
@@ -222,37 +244,6 @@
 @media (min-width: 400px) {
   .animation__curtain-card {
     width: 375px; } }
-.btn__shape-rounded, .btn__float-whp {
-  width: 40px;
-  height: 40px;
-  display: block;
-  border-radius: 50%;
-  box-shadow: 2px 1px 3px 2px #EBB467;
-  position: fixed;
-  right: 28px;
-  z-index: 100;
-  cursor: pointer; }
-
-.btn__float-whp {
-  bottom: 10px;
-  padding: 2px 0 0 2px; }
-
-.btn__scroll-top {
-  position: fixed;
-  bottom: 60px;
-  right: 28px;
-  width: 40px;
-  height: 40px;
-  z-index: 1; }
-
-.height-video {
-  height: 325px;
-  width: 100%; }
-
-@media (min-width: 500px) {
-  .height-video {
-    height: 325px;
-    width: 480px; } }
 .card__skill-progress {
   display: inline-block;
   text-align: center; }
@@ -717,6 +708,10 @@
 .golden__box-video-left {
   width: 100%; }
 
+.height-video {
+  height: 325px;
+  width: 100%; }
+
 @media (min-width: 375px) {
   .golden__py-artists {
     padding-right: 45px !important;
@@ -728,6 +723,10 @@
 
   .golden__squared-1-float {
     width: 75%; } }
+@media (min-width: 500px) {
+  .height-video {
+    height: 325px;
+    width: 480px; } }
 @media (min-width: 576px) {
   .gold-mt-body {
     margin-top: 87px; }
@@ -1133,41 +1132,41 @@ a {
   z-index: 1000;
   top: 0;
   left: 0;
-  background-color: #0a0a0a; }
+  background-color: var(--black); }
 
 #menu {
   gap: 36px;
   margin-bottom: 0;
   list-style: none; }
   #menu li a {
-    color: #EBB467; }
+    color: var(--gold-thin); }
     #menu li a span::after {
       content: "";
-      border-right: 2px solid;
-      border-bottom: 2px solid;
       width: 10px;
       height: 10px;
+      border-right: 2px solid;
+      border-bottom: 2px solid;
       transform: translate(-50%, -50%);
       rotate: 45deg;
       position: absolute;
       top: 50%;
       right: -16px; }
     #menu li a:hover {
-      color: #EBD1AE; }
+      color: var(--gold-soft); }
   #menu #item-service ul, #menu #item-artist ul {
     width: max-content;
     position: absolute;
-    background-color: #0a0a0a;
-    border: 1px solid #EBB467;
+    background-color: var(--black);
+    border: 1px solid var(--gold-thin);
     padding: 16px 0;
     list-style: none; }
     #menu #item-service ul li a, #menu #item-artist ul li a {
       display: block;
       padding: 8px 24px;
-      color: #EBB467; }
+      color: var(--gold-thin); }
       #menu #item-service ul li a:hover, #menu #item-artist ul li a:hover {
-        background-color: #6B522F;
-        color: #EBD1AE;
+        background-color: var(--gold-hard);
+        color: var(--gold-soft);
         text-decoration: none !important; }
 
 #nav-mobile {
@@ -1194,6 +1193,7 @@ a {
 .nav-mobile-btn {
   width: 50px;
   height: 50px;
+  border-radius: 50%;
   position: absolute;
   text-align: center;
   z-index: 300;
@@ -1210,13 +1210,13 @@ a {
   left: 0;
   transition: all 200ms;
   display: inline-block;
-  background-color: #9E7A46; }
+  background-color: var(--gold-dark); }
 
 .nav-mobile-btn-icon {
   width: 30px;
   height: 4px;
   display: inline-block;
-  background-color: #9E7A46;
+  background-color: var(--gold-dark);
   position: relative; }
   .nav-mobile-btn-icon:before {
     width: 30px;
@@ -1230,6 +1230,7 @@ a {
 .nav-mobile-bg {
   width: 50px;
   height: 50px;
+  border-radius: 50%;
   background-size: cover;
   background-position: center;
   z-index: 100;
@@ -1239,9 +1240,9 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+  width: 0;
   height: 100vh;
   opacity: 0;
-  width: 0;
   visibility: hidden;
   z-index: 200;
   transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }
@@ -1286,7 +1287,11 @@ a {
 .bg-img-grad-gold-2, .swiper-services .swiper-pagination-bullet, .swiper-services .swiper-pagination-bullet-active {
   background-image: linear-gradient(to left, #EBB467, #EBD1AE, #AE9B81); }
 
-.theme__gold-neon, .animation__btn-scroll-effect i, .swiper-button-next:after,
+.bg-efect-neon, .animation-effect-scroll-up i {
+  color: #f7dab2;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #AE9B81, 0 0 42px #AE9B81, 0 0 82px #9E7A46, 0 0 92px #9E7A46, 0 0 102px #666204, 0 0 151px #666204; }
+
+.theme__gold-neon, .swiper-button-next:after,
 .swiper-button-prev:after {
   color: #f7dab2;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #AE9B81, 0 0 42px #AE9B81, 0 0 82px #9E7A46, 0 0 92px #9E7A46, 0 0 102px #666204, 0 0 151px #666204; }
@@ -8124,7 +8129,7 @@ textarea.form-control-lg {
 .rounded-5 {
   border-radius: var(--bs-border-radius-2xl) !important; }
 
-.rounded-circle, .nav-mobile-btn, .nav-mobile-bg {
+.rounded-circle {
   border-radius: 50% !important; }
 
 .rounded-pill {

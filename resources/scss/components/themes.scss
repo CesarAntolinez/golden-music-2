@@ -2,7 +2,8 @@
 .bg-grad-gold-1 { 
     background: linear-gradient(145deg, 
     rgba(71, 56, 35, 0.5) 20%, 
-    #EBD1AE 43%, rgba(119, 88, 44, 0.1) 50%, 
+    #EBD1AE 43%, 
+    rgba(119, 88, 44, 0.1) 50%, 
     rgba(206, 148, 67, 0.6) 66%, 
     #EBD1AE 80%, 
     #EBB467 85%) 
@@ -44,6 +45,25 @@
     #EBD1AE, 
     #AE9B81);
 }
+// Theme Neon
+.bg-efect-neon {
+    color: #f7dab2;
+	text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #AE9B81,
+    0 0 42px #AE9B81,
+    0 0 82px #9E7A46,
+    0 0 92px #9E7A46,
+    0 0 102px #666204,
+    0 0 151px #666204;
+}
+
+
+
+
+
+
 
 .theme__gold-neon {
     color: #f7dab2;

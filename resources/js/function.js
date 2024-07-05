@@ -4,24 +4,25 @@ AOS.init({
     once: false
 });
 
-// Button fixed - Scroll Top 
+// Animation Btn Scroll Up
 window.onscroll = function(){
     if(document.documentElement.scrollTop > 100){
-        document.querySelector('.btn__scroll-top')
-        .classList.add('animation__btn-scroll-top');
+        document.querySelector('.animation-btn-scroll-up')
+        .classList.add('animation-action-scroll-up');
     }
     else{
-        document.querySelector('.btn__scroll-top')
-        .classList.remove('animation__btn-scroll-top');
+        document.querySelector('.animation-btn-scroll-up')
+        .classList.remove('animation-action-scroll-up');
     }
 }
-document.querySelector('.btn__scroll-top')
+document.querySelector('.animation-btn-scroll-up')
     .addEventListener('click', () => {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
     }); 
 });
+// End Animation Btn Scroll Up
 
 $(".service-description-zs").on('click', function () {
     var div = $(this);
