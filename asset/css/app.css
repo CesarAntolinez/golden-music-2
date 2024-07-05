@@ -504,6 +504,9 @@
 .gold-h-6px {
   height: 6px; }
 
+.gold-h-205px {
+  height: 205px; }
+
 .listyle-none {
   list-style: none; }
 
@@ -522,8 +525,24 @@
 .golden__l-height-2 {
   line-height: 2; }
 
+.gold-zindex-1 {
+  z-index: 1; }
+
 .gold-zindex-205 {
   z-index: 205; }
+
+.gold-bar-video {
+  width: 100%;
+  height: 205px;
+  background-color: var(--gold-thin);
+  position: absolute;
+  top: 50%;
+  z-index: 0;
+  transform: translate(0, -50%); }
+
+.gold-h-video {
+  width: 100%;
+  height: 325px; }
 
 .golden__box-comment {
   min-height: 150px;
@@ -724,6 +743,10 @@
   .golden__squared-1-float {
     width: 75%; } }
 @media (min-width: 500px) {
+  .gold-h-video {
+    width: 480px;
+    height: 325px; }
+
   .height-video {
     height: 325px;
     width: 480px; } }

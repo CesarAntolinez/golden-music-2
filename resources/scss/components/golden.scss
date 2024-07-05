@@ -6,6 +6,7 @@
 // Height
 .gold-h-min-content { height: min-content }
 .gold-h-6px { height: 6px }
+.gold-h-205px { height: 205px }
 // lists
 .listyle-none { list-style: none }
 // Margins
@@ -17,7 +18,19 @@
 // texts
 .golden__l-height-2 { line-height: 2; }
 // Z-Index
+.gold-zindex-1 { z-index: 1 }
 .gold-zindex-205 { z-index: 205 }
+
+// Custom Styles
+.gold-bar-video {
+    @include squared(100%, 205px);
+    background-color: var(--gold-thin);
+    position: absolute;
+    top: 50%;
+    z-index: 0; 
+    transform: translate(0, -50%);
+} 
+.gold-h-video { @include squared(100%, 325px) }
 
 
 
@@ -202,6 +215,7 @@
 }
 
 @media(min-width: 500px) {
+    .gold-h-video { @include squared(480px, 325px) }
     .height-video { height: 325px; width: 480px}
 }
 
