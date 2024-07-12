@@ -1,35 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Buda:wght@300&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
-
-
-
-
 // SCSS FILES
-// components
 @import 'resources/scss/components/animations.scss';
-@import 'resources/scss/components/buttons.scss';
 @import 'resources/scss/components/cards.scss';
 @import 'resources/scss/components/golden.scss';
-@import 'resources/scss/components/grids.scss';
-@import 'resources/scss/components/icons.scss';
 @import 'resources/scss/components/images.scss';
-@import 'resources/scss/components/layouts.scss';
 @import 'resources/scss/components/navs.scss';
 @import 'resources/scss/components/themes.scss';
-// plugins
 @import 'resources/scss/plugins/swiper.scss';
-// Variables
 @import 'resources/scss/_variables.scss';
 
 // Customize Bootstrap
 $primary: #6B522F;
-
 $theme-colors: (
   "primary": $primary
 );

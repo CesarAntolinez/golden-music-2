@@ -1,11 +1,11 @@
-// ***** Skill - Home *****
-.card__skill-progress {
+// Cards -Skill Home
+.card-skill-progress {
 	display: inline-block;
 	text-align: center;
 	.card-body {
 		position: relative;
 		background: transparent;
-		border: 6px solid #1b1b1b;
+		border: 6px solid var(--black-blue);
 		border-radius: 50%;
 		width: 7.5em;
 		height: 7.5em;
@@ -13,9 +13,33 @@
 		margin: auto;
 	}
 }
-
-// ***** Artists - Home *****
-.card__reflect-below {
+.card-skill-rounded {
+	background: linear-gradient(0deg, #080808 0%, #111111 100%);
+	position: absolute;
+	width: 6.5em;
+	height: 6.5em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #f7dab2;
+    text-shadow: 0 0 24px #fff, 0 0 51px #fff, 0 0 8px #AE9B81, 0 0 119px #AE9B81, 0 0 126px #9E7A46, 0 0 92px #9E7A46, 0 0 95px #666204, 0 0 100px #666204;
+	z-index: 1;
+}
+.card-skill-rounded-effect {
+	position: absolute;
+	width: 7.3em;
+	height: 7.3em;
+	bottom: -100%;
+    background: linear-gradient(0deg, #f5dd54 0%, #e98613 100%);
+	transition: bottom 6s;
+}
+// Cards - Artists - Home
+.card-reflect-below {
 	width: 275px;
 	height: 435px;
 	margin: auto;
@@ -56,223 +80,9 @@
 		}
 	}
 }
-
-// ***** Card Zoom Curtain Us - Home *****
-.card__zoom-curtain {
-	width: 270px;
-	margin: auto;
-	position: relative;
-	border-radius: 4px;
-	overflow: hidden;
-	background-color: #fff;
-	transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
-	box-shadow: 4px 7px 12px 1px rgba(107, 82, 47, .4);
-	&:hover {
-		box-shadow: 4px 7px 12px 1px rgba(107, 82, 47, .4);
-		transform: scale(1.05, 1.03);
-		.img__logo-golden {
-			opacity: .7;
-		}
-		.img__bg-zoom {
-			height: 100%;
-			opacity: 0.3;
-		}
-		.card-body {
-			background-color: transparent;
-			position: relative;
-		}
-	}
-	.card-body {
-		background-color: #fff;
-		border-bottom-left-radius: 4px;
-		border-bottom-right-radius: 4px;
-		padding: 18px 16px;
-		a{
-			border-color: #EBD1AE;
-			background-color: #6b522f;
-			color: #EBD1AE;
-			&:hover {
-				box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
-				transform: scale(1.01);
-				border-color: #6b522f;
-				background-color: #EBD1AE;
-				color: #6b522f;
-			}
-		}
-	}
-}
-
-// ***** Card White Us *****
-.card__white-golden {
-	display: flex;
-	width: 515px !important; 
-	height: 300px !important; 
-	margin: auto;
-	position: absolute; 
-	bottom: -100px; 
-	left: -16px; 
-	padding: 45px 0;
-	background-color: white;
-	background-image: url('../image-temp/nosotros/nosotros-005.jpg');
-	background-repeat: no-repeat; 
-	background-size: contain;
-	box-shadow: 16px 16px 25px 0 rgba(0,0,0,4.5);
-    border-radius: 16px;
-	img {
-		width: 175px;
-		height: fit-content;
-		margin-left: auto;
-	}
-}
-
-.card__mini-squared { 
-    width: 135px;
-    padding: 24px 0;
-    text-align: center;
-    border-radius: 4px;
-    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.3), 0 0 1px 0 rgba(0, 0, 0, 0.25);
-}
-
-// Extends class 
-.mini-card-grid { // extends class 
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: auto;
-	gap: 12px;
-}
-.mini-cards-us { // extends class 
-	width: 135px;
-    padding: 24px 0;
-    text-align: center;
-    border-radius: 4px;
-	box-shadow: 0 4px 25px 0 rgba(0,0,0,.3), 0 0 1px 0 rgba(0,0,0,.25);
-	background-color: #fff;
-}
-// Valores y principios
-.card-group-val {
-	@extend .mini-card-grid;
-	.val-one {
-		grid-row: 1/2;
-		grid-column: 1/2;
-		@extend .mini-cards-us;
-	}
-	.val-two {
-		grid-row: 1/2;
-		grid-column: 2/3;
-		@extend .mini-cards-us;
-	}
-	.val-three {
-		grid-row: 2/3;
-		grid-column: 1/2;
-		@extend .mini-cards-us;
-	}
-	.val-four {
-		grid-row: 2/3;
-		grid-column: 2/3;
-		@extend .mini-cards-us;
-	}
-	.val-five {
-		grid-row: 3/4;
-		grid-column: 1/2;
-		@extend .mini-cards-us;
-	}
-	.val-six {
-		grid-row: 3/4;
-		grid-column: 2/3;
-		@extend .mini-cards-us;
-	}
-	.val-seven {
-		grid-row: 5/6;
-		grid-column: 1/2;
-		@extend .mini-cards-us;
-	}
-	.val-height {
-		grid-row: 5/6;
-		grid-column: 2/3;
-		@extend .mini-cards-us;
-	}
-	.val-nine {
-		grid-row: 6/7;
-		grid-column: 1/2;
-		@extend .mini-cards-us;
-	}
-	.val-ten {
-		grid-row: 6/7;
-		grid-column: 2/3;
-		@extend .mini-cards-us;
-	}
-	.val-eleven {
-		grid-row: 7/8;
-		grid-column: 1/2;
-		@extend .mini-cards-us;
-	}
-	.val-twelve {
-		grid-row: 7/8;
-		grid-column: 2/3;
-		@extend .mini-cards-us;
-	}
-}
-
-@media(min-width: 576px) {
-	.card-group-val {
-		.val-one {
-			grid-row: 1/2;
-			grid-column: 1/2;
-		}
-		.val-two {
-			grid-row: 1/2;
-			grid-column: 2/3;
-		}
-		.val-three {
-			grid-row: 1/2;
-			grid-column: 3/4;
-		}
-		.val-four {
-			grid-row: 2/3;
-			grid-column: 1/2;
-		}
-		.val-five {
-			grid-row: 2/3;
-			grid-column: 2/3;
-		}
-		.val-six {
-			grid-row: 2/3;
-			grid-column: 3/4;
-		}
-		.val-seven {
-			grid-row: 3/4;
-			grid-column: 1/2;
-		}
-		.val-height {
-			grid-row: 3/4;
-			grid-column: 2/3;
-		}
-		.val-nine {
-			grid-row: 3/4;
-			grid-column: 3/4;
-		}
-		.val-ten {
-			grid-row: 4/5;
-			grid-column: 1/2;
-		}
-		.val-eleven {
-			grid-row: 4/5;
-			grid-column: 2/3;
-		}
-		.val-twelve {
-			grid-row: 4/5;
-			grid-column: 3/4;
-		}
-	}
-}
-
-@media(min-width: 768px) {
-
-}
-
 @media(min-width: 1200px) {
-	// ***** Artists - Home *****
-	.card__reflect-below {
+	// Cards - Artists - Home
+	.card-reflect-below {
 		.car-body {
 			left: auto;
 			right: -100%;
@@ -282,61 +92,5 @@
 			justify-content: center;
 		}
 		&:hover .car-body { right: 0 }
-	}
-	.card-group-val {
-		.val-one {
-			grid-row: 1/2;
-			grid-column: 1/2;
-		}
-		.val-two {
-			grid-row: 1/2;
-			grid-column: 2/3;
-		}
-		.val-three {
-			grid-row: 1/2;
-			grid-column: 3/4;
-		}
-		.val-four {
-			grid-row: 1/2;
-			grid-column: 4/5;
-		}
-		.val-five {
-			grid-row: 2/3;
-			grid-column: 1/2;
-		}
-		.val-six {
-			grid-row: 2/3;
-			grid-column: 2/3;
-		}
-		.val-seven {
-			grid-row: 2/3;
-			grid-column: 3/4;
-		}
-		.val-height {
-			grid-row: 2/3;
-			grid-column: 4/5;
-		}
-		.val-nine {
-			grid-row: 3/4;
-			grid-column: 1/2;
-		}
-		.val-ten {
-			grid-row: 3/4;
-			grid-column: 2/3;
-		}
-		.val-eleven {
-			grid-row: 3/4;
-			grid-column: 3/4;
-		}
-		.val-twelve {
-			grid-row: 3/4;
-			grid-column: 4/5;
-		}
-	}
-}
-
-@media(min-width: 1920px) {
-	.w-xxl-75 {
-		width: 75%;
 	}
 }

@@ -24,29 +24,29 @@ document.querySelector('.animation-btn-scroll-up')
 });
 // End Animation Btn Scroll Up
 
-$(".service-description-zs").on('click', function () {
-    var div = $(this);
+// $(".service-description-zs").on('click', function () {
+//     var div = $(this);
 
-    if (div.hasClass("txt-three-lines")) {
-        div.removeClass("txt-three-lines").addClass("show-txt-three-lines");
-    } else {
-        div.removeClass("show-txt-three-lines").addClass("txt-three-lines");
-    }
-});
+//     if (div.hasClass("txt-three-lines")) {
+//         div.removeClass("txt-three-lines").addClass("show-txt-three-lines");
+//     } else {
+//         div.removeClass("show-txt-three-lines").addClass("txt-three-lines");
+//     }
+// });
 
 
-$(".oculto").hide();
-$(".ver-mas").click(function(){
-    var self = $(this);
-    self.next().toggle();
-    /////
-    if(self.val()=="Ver menos"){
-        self.val("Ver más");
-        $(self).removeClass("icon-chevronUp");
-        $(self).addClass('icon-chevronDown');
-    } else {
-        $(self).val ("Ver menos");
-        $(self).removeClass('icon-chevronDown');
-        $(self).addClass("icon-chevronUp");
-    }
-});
+// $(".oculto").hide();
+// $(".ver-mas").click(function(){
+//     var self = $(this);
+//     self.next().toggle();
+//     /////
+//     if(self.val()=="Ver menos"){
+//         self.val("Ver más");
+//         $(self).removeClass("icon-chevronUp");
+//         $(self).addClass('icon-chevronDown');
+//     } else {
+//         $(self).val ("Ver menos");
+//         $(self).removeClass('icon-chevronDown');
+//         $(self).addClass("icon-chevronUp");
+//     }
+// });

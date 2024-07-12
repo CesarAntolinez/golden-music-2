@@ -125,7 +125,7 @@ var swiper = new Swiper(".swiper-clients", {
     }
 });
 
-// Swiper Profesionales
+// Swiper artistis
 var swiper = new Swiper(".swiper-professionals", {
     autoplay: {
       delay: 4000,

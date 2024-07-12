@@ -10,8 +10,17 @@
     line-height: 4;
 }
 .swiper-button-next:after, 
-.swiper-button-prev:after  { @extend .theme__gold-neon; }
+.swiper-button-prev:after  { @extend .bg-efect-neon; }
 // END Swipper Banner main home
+
+.swiper-arrows > .swiper-button-prev,
+.swiper-arrows > .swiper-button-next {
+	@include squared(63px, 63px);
+	@extend .bg-grad-gold-4; 
+    border-radius: 50%;
+    text-align: center;
+    line-height: 4;
+}
 
 // Swipper Services home
 .swiper-services > .swiper-button-prev,
