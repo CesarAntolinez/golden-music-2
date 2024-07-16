@@ -36,11 +36,11 @@
 	object-fit: cover;
 }
 .img-rounded-small {
-    @include imgContainer(60px, 60px, #FFFFFF, 50% );
+    @include imgContainer(90px, 90px, #FFFFFF, 50% );
     img { @include imgObject(cover) }
 }
-// .img-fluid-cover {
-// 	width: 100%;
-// 	height: 100%;
-// 	object-fit: cover;
-// }
+.img-logo-header { 
+    position: absolute; 
+    left: 4px; 
+    top: 32px;
+ }

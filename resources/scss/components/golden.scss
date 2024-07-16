@@ -14,6 +14,10 @@
 // Positions
 .gold-top-0 { top: 0 }
 .gold-right-0 { right: 0 }
+.gold-tr-0 { 
+    top: 0;
+    right: 0;
+}
 // Line height
 .gold-lh-05 { line-height: .5 }
 .gold-lh-2 { line-height: 2; }
@@ -39,9 +43,7 @@
     max-height: 530px;
     overflow-y: auto;
 }
-.gold-comment {
-    position: relative;
-    padding-left: 30px !important;
+.gold-comment { position: relative;
     .gold-comment-text{ border-left: 3px solid #EBB467 }
 }
 .gold-box-video { @include squared(100%, 325px) }

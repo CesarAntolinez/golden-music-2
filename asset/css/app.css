@@ -352,6 +352,10 @@
 .gold-right-0 {
   right: 0; }
 
+.gold-tr-0 {
+  top: 0;
+  right: 0; }
+
 .gold-lh-05 {
   line-height: 0.5; }
 
@@ -393,8 +397,7 @@
   overflow-y: auto; }
 
 .gold-comment {
-  position: relative;
-  padding-left: 30px !important; }
+  position: relative; }
   .gold-comment .gold-comment-text {
     border-left: 3px solid #EBB467; }
 
@@ -454,8 +457,8 @@
   object-fit: cover; }
 
 .img-rounded-small {
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   background-color: #FFFFFF;
   border-radius: 50%; }
   .img-rounded-small img {
@@ -464,6 +467,11 @@
     object-fit: cover;
     object-position: center;
     border-radius: inherit; }
+
+.img-logo-header {
+  position: absolute;
+  left: 4px;
+  top: 32px; }
 
 .nav-header {
   width: 100%;
