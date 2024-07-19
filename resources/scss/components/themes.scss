@@ -34,6 +34,16 @@
     rgba(206, 148, 67, 0.6) 66%, 
     #EBD1AE 80%, #EBB467 85%)
 }
+.bg-grad-gold-6 { background: linear-gradient(163deg, 
+    rgba(2,0,36,1) 0%, 
+    rgba(107,82,46,1) 44%,
+    rgba(161, 122, 69,1) 99%)
+}
+.bg-grad-gold-7 { background: linear-gradient(163deg, 
+    #fcdfc6 0%, 
+    rgba(212, 181, 189,1) 44%, 
+    rgba(238,223,227,1) 99%);
+}
 // Background Image Gradient
 .bg-img-grad-gold-1 { // PENDIENTE POR CAMBIAR POR EL bg-grad-gold-2 LINEA 10
     background-image: radial-gradient(circle at 49.22% 50.45%, 
@@ -49,6 +59,16 @@
     #EBD1AE, 
     #AE9B81);
 }
+// Background Image Radial
+.bg-img-radial-gold-1 {
+    background-image: radial-gradient(circle at 54.37% 55.2%, 
+    #ffd66f 0, 
+    #faca62 25%, 
+    #f2bd53 50%, 
+    #eab044 75%, 
+    #e3a437 100%)
+}
+
 // Theme Neon
 .bg-efect-neon {
     color: #f7dab2;
@@ -62,7 +82,17 @@
     0 0 102px #666204,
     0 0 151px #666204;
 }
-.bg-grey-soft { background-color: var(--grey-soft);  }
+
+.bg-pink-light { background-color: #d4b6be }
+.bg-pink-thin { background-color: #eedfe3 }
+.bg-orange-thin { background-color: #fcdfc6 !important }
+.bg-inherit { background-color: inherit !important }
+.bg-grey-soft { background-color: var(--grey-soft) }
+.bg-green-light { background-color: #e8eae3 }
+.bg-black-dark { background: rgb(2,0,36) }
+.bg-black-deep { background-color: #292d33 }
+
+
 
 
 

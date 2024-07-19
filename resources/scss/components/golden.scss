@@ -3,31 +3,73 @@
     width: $width;
     height: $height;
 }
+.gold-squared-65 {  @include squared(65px, 65px); }
+// Boreders
+.gold-border-0 { border: 0 !important }
+.gold-border-bottom-3 { border-bottom: 3px solid #fff !important }
+.gold-rounded-0 { border-radius: 0 !important }
+// Box Shadow
+.gold-shadow-50-pink { box-shadow: 50px 50px 8px #d4b6be }
+.gold-shadow-40-gray { box-shadow: -40px 40px 15px gray }
 // Height
+.gold-h-fit-content { height: fit-content }
 .gold-h-min-content { height: min-content }
+.gold-h-max-content { height: max-content }
 .gold-h-6px { height: 6px }
+.gold-h-8px { height: 8px }
+.gold-h-150px { height: 150px }
 .gold-h-205px { height: 205px }
+.gold-h-408px { height: 480px }
 // lists
 .listyle-none { list-style: none }
 // Margins
 .gold-mt-7em { margin-top: 7em } 
 // Positions
 .gold-top-0 { top: 0 }
+.gold-top-24 { top: 24px }
+.gold-top-32 { top: 32px }
+.gold-left-4 { left: 4px }
 .gold-right-0 { right: 0 }
-.gold-tr-0 { 
-    top: 0;
-    right: 0;
+.gold-tr-0 { top: 0; right: 0; }
+.gold-tl-0 { top: 0; left: 0; }
+.gold-br-0 { bottom: 0; right: 0; }
+.gold-center-left { 
+    left:0; 
+    top: 50%; 
+    transform: translate(0, -50%);
 }
 // Line height
 .gold-lh-05 { line-height: .5 }
 .gold-lh-2 { line-height: 2; }
+.gold-line-text-decoration-vtcl {
+    width: 8px; 
+    height: 36px; 
+    margin: 0; 
+    background: darkred; 
+    display: flex; 
+    align-self: center;
+}
+// Text
+.gold-text-decoration-vtcl {
+    writing-mode: vertical-rl; 
+    display: flex; 
+    transform: scaleY(1); 
+    rotate: 180deg; 
+    margin: 0;
+}
+// Vertical
+.gold-v-align-bootom { vertical-align: bottom }
 // Width
 .gold-web-fill { width: -webkit-fill-available }
+.gold-w-max-cont { width: max-content }
+.gold-w-305px { width: 305px }
 // Z-Index
+.gold-zindex-unless1 { z-index: -1 }
 .gold-zindex-1 { z-index: 1 }
+.gold-zindex-2 { z-index: 2 }
 .gold-zindex-205 { z-index: 205 }
 // Custom Styles
-.gold-mt-body { margin-top: 5.5em; }
+.gold-mt-body { margin-top: 5.3em }
 .gold-bar-video {
     @include squared(100%, 205px);
     position: absolute;
@@ -54,9 +96,9 @@
 }
 @media(min-width: 768px) {
     // Custom Styles
-    .gold-mt-body { margin-top: 6.5em }
+    .gold-mt-body { margin-top: 6.3em }
 }
 @media(min-width: 992px) {
     // Custom Styles
-    .gold-mt-body { margin-top: 4.5em }
+    .gold-mt-body { margin-top: 4.3em }
 }

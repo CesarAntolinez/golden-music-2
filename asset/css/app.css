@@ -331,14 +331,48 @@
     justify-content: center; }
   .card-reflect-below:hover .car-body {
     right: 0; } }
+.gold-squared-65 {
+  width: 65px;
+  height: 65px; }
+
+.gold-border-0 {
+  border: 0 !important; }
+
+.gold-border-bottom-3 {
+  border-bottom: 3px solid #fff !important; }
+
+.gold-rounded-0 {
+  border-radius: 0 !important; }
+
+.gold-shadow-50-pink {
+  box-shadow: 50px 50px 8px #d4b6be; }
+
+.gold-shadow-40-gray {
+  box-shadow: -40px 40px 15px gray; }
+
+.gold-h-fit-content {
+  height: fit-content; }
+
 .gold-h-min-content {
   height: min-content; }
+
+.gold-h-max-content {
+  height: max-content; }
 
 .gold-h-6px {
   height: 6px; }
 
+.gold-h-8px {
+  height: 8px; }
+
+.gold-h-150px {
+  height: 150px; }
+
 .gold-h-205px {
   height: 205px; }
+
+.gold-h-408px {
+  height: 480px; }
 
 .listyle-none {
   list-style: none; }
@@ -349,6 +383,15 @@
 .gold-top-0 {
   top: 0; }
 
+.gold-top-24 {
+  top: 24px; }
+
+.gold-top-32 {
+  top: 32px; }
+
+.gold-left-4 {
+  left: 4px; }
+
 .gold-right-0 {
   right: 0; }
 
@@ -356,23 +399,66 @@
   top: 0;
   right: 0; }
 
+.gold-tl-0 {
+  top: 0;
+  left: 0; }
+
+.gold-br-0 {
+  bottom: 0;
+  right: 0; }
+
+.gold-center-left {
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%); }
+
 .gold-lh-05 {
   line-height: 0.5; }
 
 .gold-lh-2 {
   line-height: 2; }
 
+.gold-line-text-decoration-vtcl {
+  width: 8px;
+  height: 36px;
+  margin: 0;
+  background: darkred;
+  display: flex;
+  align-self: center; }
+
+.gold-text-decoration-vtcl {
+  writing-mode: vertical-rl;
+  display: flex;
+  transform: scaleY(1);
+  rotate: 180deg;
+  margin: 0; }
+
+.gold-v-align-bootom {
+  vertical-align: bottom; }
+
 .gold-web-fill {
   width: -webkit-fill-available; }
 
+.gold-w-max-cont {
+  width: max-content; }
+
+.gold-w-305px {
+  width: 305px; }
+
+.gold-zindex-unless1 {
+  z-index: -1; }
+
 .gold-zindex-1 {
   z-index: 1; }
+
+.gold-zindex-2 {
+  z-index: 2; }
 
 .gold-zindex-205 {
   z-index: 205; }
 
 .gold-mt-body {
-  margin-top: 5.5em; }
+  margin-top: 5.3em; }
 
 .gold-bar-video {
   width: 100%;
@@ -414,10 +500,10 @@
     height: 325px; } }
 @media (min-width: 768px) {
   .gold-mt-body {
-    margin-top: 6.5em; } }
+    margin-top: 6.3em; } }
 @media (min-width: 992px) {
   .gold-mt-body {
-    margin-top: 4.5em; } }
+    margin-top: 4.3em; } }
 .material-symbols-outlined.md-18 {
   font-size: 18px; }
 
@@ -472,6 +558,11 @@
   position: absolute;
   left: 4px;
   top: 32px; }
+
+.img-bg-cover-bottom {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .nav-header {
   width: 100%;
@@ -632,19 +723,49 @@
 .bg-grad-gold-5 {
   background: linear-gradient(145deg, rgba(71, 56, 35, 0.5) 20%, #EBD1AE 43%, rgba(119, 88, 44, 0.1) 50%, rgba(206, 148, 67, 0.6) 66%, #EBD1AE 80%, #EBB467 85%); }
 
+.bg-grad-gold-6 {
+  background: linear-gradient(163deg, #020024 0%, #6b522e 44%, #a17a45 99%); }
+
+.bg-grad-gold-7 {
+  background: linear-gradient(163deg, #fcdfc6 0%, #d4b5bd 44%, #eedfe3 99%); }
+
 .bg-img-grad-gold-1 {
   background-image: radial-gradient(circle at 49.22% 50.45%, #ffea82 0, #eed077 25%, #d8b46c 50%, #c09a62 75%, #a98359 100%); }
 
 .bg-img-grad-gold-2, .swiper-services .swiper-pagination-bullet, .swiper-services .swiper-pagination-bullet-active {
   background-image: linear-gradient(to left, #EBB467, #EBD1AE, #AE9B81); }
 
+.bg-img-radial-gold-1 {
+  background-image: radial-gradient(circle at 54.37% 55.2%, #ffd66f 0, #faca62 25%, #f2bd53 50%, #eab044 75%, #e3a437 100%); }
+
 .bg-efect-neon, .animation-effect-scroll-up i, .swiper-button-next:after,
 .swiper-button-prev:after {
   color: #f7dab2;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #AE9B81, 0 0 42px #AE9B81, 0 0 82px #9E7A46, 0 0 92px #9E7A46, 0 0 102px #666204, 0 0 151px #666204; }
 
+.bg-pink-light {
+  background-color: #d4b6be; }
+
+.bg-pink-thin {
+  background-color: #eedfe3; }
+
+.bg-orange-thin {
+  background-color: #fcdfc6 !important; }
+
+.bg-inherit {
+  background-color: inherit !important; }
+
 .bg-grey-soft {
   background-color: var(--grey-soft); }
+
+.bg-green-light {
+  background-color: #e8eae3; }
+
+.bg-black-dark {
+  background: #020024; }
+
+.bg-black-deep {
+  background-color: #292d33; }
 
 .mySwiperBanner > .swiper-button-next {
   right: 65px; }
@@ -724,6 +845,9 @@
 
 body {
   font-family: "Quicksand" !important; }
+
+body .gold-mt-body {
+  overflow: hidden; }
 
 .fw-600 {
   font-weight: 600 !important; }

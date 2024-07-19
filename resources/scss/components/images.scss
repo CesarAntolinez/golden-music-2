@@ -43,4 +43,9 @@
     position: absolute; 
     left: 4px; 
     top: 32px;
- }
+}
+.img-bg-cover-bottom {
+    background-position: bottom; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
