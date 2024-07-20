@@ -49,3 +49,9 @@
     background-repeat: no-repeat; 
     background-size: cover;
 }
+.img-bg-norepeat-cover { background-repeat: no-repeat; background-size: cover }
+.img-bg-attachment {
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed;
+}
